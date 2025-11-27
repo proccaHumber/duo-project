@@ -344,3 +344,67 @@ header .wrapper {
   font-family:"Nova Flat",cursive;
   height:2rem;
 }
+
+@media only screen and (max-width:1280px) {
+
+  /*  Footer 1280px  */
+
+  .footerContact {
+    margin:0 0 4rem 6rem;
+  }
+
+  .footerBox {
+    width:calc(50% - 6rem);
+    font-size:90%;
+  }
+
+  .footerBox p {
+    line-height:1.2rem;
+  }
+
+  .footerForm button,.footerForm input {
+    float:none;
+    width:100%;
+  }
+
+  .footerForm button {
+    margin-bottom:2rem;
+  }
+}
+
+@media only screen and (max-width:768px) {
+
+  /*  Footer 768px  */
+
+  .footerBox,.middleNavItem {
+    float:none;
+    width:100%;
+    text-align:center;
+  }
+
+  .middleNavItem {
+    margin:1rem auto;
+  }
+
+  .footerBox {
+    margin:0 auto;
+    margin-bottom:1.5rem;
+  }
+
+  .footerForm {
+    margin-top:3rem;
+  }
+
+  .footerForm p {
+    margin-top:1.5rem;
+  }
+
+  .footerForm form {
+    width:90%;
+    margin:0 auto;
+  }
+
+  .footerForm input {
+    margin-bottom:5px;
+  }
+}
