@@ -100,6 +100,25 @@ ul {
   visibility:hidden;
 }
 
+/*  Skip Box  */
+
+.skipbox {
+  background-color:rgba(255,255,255,0.9);
+  border:3px solid #e85b26;
+  border-radius:4px;
+  left:37.5%;
+  position:absolute;
+  text-align:center;
+  top:-1000px;
+  width:30%;
+  z-index:999;
+}
+
+.skipbox:focus {
+  top:0px;
+}
+
+
 /*  Header  */
 
 header {
@@ -256,6 +275,10 @@ header .wrapper {
 
 /*  Footer  */
 
+.contact:not(.bottomFooter) {
+  background-color:#f4f4f4;
+}
+
 .bottomFooter {
   background-color:#000;
   text-align:center;
@@ -265,7 +288,7 @@ header .wrapper {
   clear:both;
 }
 
-.bottomFooter p {
+.bottomFooter p,.footerContact p {
   margin:0;
 }
 
@@ -289,4 +312,35 @@ header .wrapper {
   width:4.5em;
   text-align:center;
   padding:5rem 1rem;
+}
+
+.footerBox {
+  float:left;
+  width:calc(50% - 8rem);
+  margin:0;
+}
+
+.footerContact {
+  margin:0 0 4rem 8rem;
+}
+
+.footerForm input {
+  width:70%;
+  margin:0;
+  float:left;
+  height:2rem;
+  padding-left:1rem;
+  background-color:#fff;
+  border:0;
+}
+
+.footerForm button {
+  width:30%;
+  float:left;
+  border:3px solid #e85b26;
+  background-color:#186684;
+  text-transform:uppercase;
+  color:#fff;
+  font-family:"Nova Flat",cursive;
+  height:2rem;
 }
